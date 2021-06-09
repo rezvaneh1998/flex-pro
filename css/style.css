@@ -1,0 +1,753 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #b51917;
+  --second-color: #cf1b15;
+  --text-white: white;
+  --text-white-hover: rgb(255, 255, 255, 0.7);
+  --text-black: black;
+  --light-gray: #f8f8f8;
+  --tittle-fz: 60px;
+  --h3-fz: 50px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.text-black {
+  color: black;
+}
+.text-main {
+  color: var(--second-color);
+  font-weight: bold;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+p {
+  line-height: 1.7em;
+}
+.second-familiy {
+  font-family: "Dancing script", cursive;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.heart-with-line {
+  max-width: 400px;
+  height: 1px;
+  background-color: #333;
+  margin: 50px auto;
+  position: relative;
+}
+.heart-with-line i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+  color: red;
+  background-color: white;
+  padding: 3px 20px;
+}
+.heart-with-line,
+.heart-with-line-white {
+  background: linear-gradient(
+    to right,
+    white 60%,
+    transparent 50%,
+    transparent 60%,
+    white 60%
+  );
+}
+.heart-with-line {
+  color: white;
+  background-color: black;
+}
+.heart-with-line-white i {
+  color: white;
+  background-color: transparent;
+}
+/*header*/
+#header {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 630px;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
+    url("../images/set1-happy-couple-1500x630.jpg") no-repeat center center;
+  background-size: cover;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.menu-toggler {
+  display: none;
+}
+.menu {
+  display: flex;
+}
+
+ul.menu {
+  display: flex;
+}
+.nav .logo {
+  width: 220px;
+}
+.nav .logo img {
+  width: 100%;
+  display: block;
+}
+
+ul.menu li a {
+  display: flex;
+  padding: 15px 0;
+}
+ul.menu li:first-child a {
+  border-left: none;
+}
+ul.menu li a span {
+  border-left: 1px solid white;
+  display: block;
+  padding: 0 15px;
+  color: var(--text-white);
+  font-size: 14px;
+}
+ul.menu li:first-child a span {
+  border-left: none;
+}
+ul.menu li a:hover span {
+  color: var(--text-white-hover);
+  border-left-color: var(--text-white-hover);
+}
+/*header section content*/
+.header-section {
+  text-align: center;
+}
+.header-section h1 {
+  margin-bottom: 50px;
+  font-size: 90px;
+  word-spacing: 30px;
+}
+.text-white {
+  color: white;
+  margin-left: -20px;
+}
+.customers-side {
+  padding: 50px 10px;
+}
+
+/*our story */
+#our-story {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.our-story-top {
+  text-align: center;
+  padding: 0 15px;
+  padding: 120px 15px;
+}
+.our-story-top h2 {
+  font-size: var(--tittle-fz);
+}
+.our-story-top time {
+  color: var(--second-color);
+  font-size: 40px;
+  font-weight: bold;
+}
+.our-story-top p {
+  margin: 40px 0;
+  font-size: 18px;
+  line-height: 1.7em;
+}
+
+/*our story main */
+.our-story-main {
+  width: 100%;
+  background-color: var(--light-gray);
+  text-align: center;
+  padding: 120px 15px;
+}
+.our-story-main h2 {
+  font-size: var(--tittle-fz);
+}
+.heart-with-line i.light-gray {
+  background-color: var(--light-gray);
+}
+/*our story description*/
+.our-story-description {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px;
+}
+.our-story-description p {
+  width: 48%;
+  text-align: justify;
+}
+/*who are we banner*/
+#wedding-details {
+  width: 100%;
+}
+/*banner for all sections*/
+.who-we-are-banner,
+.wedding-details-banner,
+.accomodation-banner {
+  width: 100%;
+  padding: 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), black),
+    url("../images/set1-young-couple-bw.jpg") no-repeat center 60% fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+.wedding-details-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), black),
+    url("../images/wedding-colorful-light-balls-bw.jpg") no-repeat center 60%
+      fixed;
+  background-size: cover;
+}
+.accomodation-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), black),
+    url("../images/house-croisette-promenade-in-cannes-bw.jpg") no-repeat center
+      60% fixed;
+  background-size: cover;
+}
+.wedding-details-banner h2,
+.who-we-are-banner h2,
+.accomodation-banner h2 {
+  margin-bottom: 30px;
+  font-size: var(--tittle-fz);
+}
+/*who we are bottom section*/
+.who-we-are-inner {
+  padding: 90px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.who-we-are-box {
+  width: 48%;
+}
+.who-we-are-box h3 {
+  font-size: var(--h3-fz);
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+.who-we-are-box figure {
+  width: 100%;
+}
+.who-we-are-box-image {
+  width: 100%;
+  overflow: hidden;
+}
+.who-we-are-box-image img {
+  width: 100%;
+  display: block;
+  transition: 0.5s;
+}
+.who-we-are-box-image:hover img {
+  transform: scale(1.1);
+  filter: grayscale(100%);
+}
+.who-we-are-box figure figcaption {
+  margin: 15px 0;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  text-align: center;
+}
+.who-we-are-box figure p {
+  line-height: 1.8em;
+  text-align: center;
+  font-size: 17px;
+  padding: 0 15px;
+}
+.elevator {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  color: white;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.elevator:hover {
+  background-color: var(--light-gray);
+  color: var(--main-color);
+  opacity: 1;
+  border: 1px solid #333;
+}
+/*wedding details*/
+.details-box > p {
+  text-align: center;
+}
+.details-box h3 {
+  font-weight: normal;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.details-box figure,
+.who-we-are-box-image {
+  margin: 15px 0;
+}
+.details-box figure figcaption {
+  margin: 0;
+}
+/*accomodation*/
+.accomodation-box {
+  width: 30%;
+  margin: 25px;
+}
+.accomodation-box figure {
+  position: relative;
+}
+.accomodation-box figure div::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 0;
+  transition: 0.3s;
+}
+.accomodation-box figure div::after {
+  content: "";
+  opacity: 1;
+}
+.accomodation-descripton {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.accomodation-circle {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(207, 27, 21, 0.92);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(40deg) scale(0.6);
+  z-index: 5;
+  opacity: 0;
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(0, -1.2, 0, 1.95);
+}
+.accomodation-box:hover .accomodation-circle {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0) scale(0.8);
+}
+#gift .accomodation-box .who-we-are-box-image:hover img {
+  filter: grayscale(0%) !important;
+  transform: scale(1);
+}
+#gift .who-we-are-inner::after {
+  display: none;
+}
+.accomodation-circle i {
+  transform: rotateY(180deg);
+}
+.accomodation-inner {
+  padding-bottom: 30px;
+}
+#accomodation {
+  padding: 25px;
+}
+/*gift*/
+#gift .gift-tittle {
+  text-align: center;
+  font-size: var(--tittle-fz);
+}
+#gift {
+  width: 100%;
+
+  padding: 90px 0;
+  background: url("../images/wedding-colorful-light-balls-bw1.jpg") no-repeat
+    center top;
+  background-size: cover;
+  position: relative;
+}
+#gift::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: white;
+  transform: translate(-50%, 0);
+  z-index: 5;
+}
+.our-story-main::after {
+  border-top-color: var(--light-gray);
+}
+#gift::after {
+  content: "";
+  border-top-color: #d8d8d8;
+}
+/*contact us*/
+#contact-us {
+  width: 100%;
+  padding: 120px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.299), rgba(0, 0, 0, 0.295)),
+    url("../images/set1-young-couple.jpg") no-repeat center top fixed;
+  background-size: cover;
+  min-height: 800px;
+  position: relative;
+}
+/* contact us*/
+.contact-us-form {
+  max-width: 700px;
+  background-color: rgba(255, 255, 255, 0.26);
+  margin: 0 auto;
+  padding: 50px 60px;
+  padding-bottom: 350px;
+}
+.contact-us-form h2 {
+  font-size: var(--tittle-fz);
+  text-align: center;
+  color: white;
+}
+.contact-us-form p {
+  text-align: center;
+  color: white;
+  line-height: 1.8em;
+  font-weight: bold;
+}
+.form-inner {
+  width: 100%;
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form-inner .input-parent {
+  width: 49%;
+  margin-bottom: 20px;
+}
+.input-parent label {
+  color: white;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.input-parent input,
+.input-parent select {
+  width: 100%;
+  height: 50px;
+  border: 2px solid white;
+  background-color: transparent;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  outline: 0;
+  cursor: pointer;
+}
+.input-parent select option {
+  color: black;
+}
+.input-parent input[type="email"]:valid {
+  border: 1px solid white;
+}
+.input-parent input[type="email"]:invalid {
+  border: 1px solid red;
+}
+.form-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  font-size: 16px;
+  padding: 15px 50px;
+  border-radius: 2px;
+  display: inline-block;
+  outline: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.form-btn-parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.form-btn:hover {
+  background-color: #bd2d2a80;
+}
+/*
+.input-parent input:focus {
+  outline: 0;
+}*/
+/*#contact-us::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}*/
+
+/*triangle*/
+.our-story-main,
+.our-story-top,
+.who-we-are-inner {
+  position: relative;
+}
+.our-story-main::after,
+.our-story-top::after,
+.who-we-are-inner::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: white;
+  transform: translate(-50%, 0);
+  z-index: 50;
+}
+.our-story-main::after {
+  border-top-color: var(--light-gray);
+}
+/*grooms and brids in who we are*/
+
+.customers {
+  width: 100%;
+  background-color: orange;
+  display: flex;
+}
+
+.customers-side {
+  width: 50%;
+  min-height: 200px;
+  padding: 50px;
+}
+.customers-left-side {
+  background-color: #f8f8f8;
+}
+.customers-right-side {
+  background-color: #f9f2f2;
+}
+.customers-side h3 {
+  text-align: center;
+  font-size: var(--title-fz);
+  margin-bottom: 30px;
+}
+.customers-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+.customers-gallery figure {
+  width: 30%;
+}
+.customers-gallery figure div {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.customers-gallery figure div img {
+  width: 100%;
+  display: block;
+  border-radius: 50%;
+}
+.customers-gallery figure figcaption {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* footer */
+#footer {
+  background-color: var(--main-color);
+  color: white;
+  padding: 15px 0;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-inner ul {
+  display: flex;
+}
+.footer-inner li:first-child {
+  margin-left: 0;
+}
+.footer-inner li {
+  margin-left: 30px;
+}
+.footer-inner p {
+  font-size: 14px;
+}
+.footer-inner ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+.footer-inner ul li a:hover {
+  text-decoration: underline;
+}
+/*for mobile and smartphone*/
+@media (max-width: 989px) {
+  /*header*/
+  #header {
+    min-height: 400px;
+  }
+  /*nav*/
+  .nav {
+    background-color: var(--main-color);
+  }
+  .nav .logo {
+    width: 300px;
+  }
+  .nav .menu {
+    display: none;
+  }
+  .menu-toggler {
+    display: block;
+    color: var(--text-white);
+    cursor: pointer;
+  }
+  .menu-toggler:hover {
+    color: var(--text-white-hover);
+  }
+  .accomodation-banner h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-left: -40px;
+  }
+  .accomodation-banner {
+    width: 100%;
+  }
+
+  /*header content section*/
+  .header-section h1 {
+    margin-bottom: 40px;
+    font-size: var(--h3-fz);
+    word-spacing: 0;
+  }
+  /*form*/
+  .form-inner .input-parent {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .our-story-description {
+    flex-wrap: wrap;
+  }
+  .our-story-description p {
+    width: 100%;
+  }
+  .our-story-description p:first-child {
+    margin-bottom: 60px;
+  }
+  /*who we are bottom section*/
+  .who-we-are-inner {
+    flex-wrap: wrap;
+  }
+  .who-we-are-box {
+    width: 100%;
+  }
+  .form-btn-parent {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  /*customers gallery*/
+  .customers {
+    flex-wrap: wrap;
+  }
+  .customers-side {
+    width: 100%;
+  }
+  .customers-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+  .customers-gallery figure {
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.24);
+    padding-bottom: 20px;
+  }
+  .customers-gallery figure:last-child {
+    border: none;
+  }
+
+  .accomodation-inner {
+    flex-wrap: wrap;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .footer-inner {
+    margin-top: 200px;
+  }
+  .contact-us-form {
+    padding-bottom: 615px;
+  }
+  .footer-inner {
+    margin-top: 0;
+    flex-direction: column;
+  }
+}
+
+/*custom responsive*/
+@media (max-width: 886px) and (min-width: 768px) {
+  .details-box > h3 {
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .accomodation-inner {
+    flex-wrap: wrap;
+    padding: 30px 30px;
+  }
+  .contact-us-form {
+    padding-bottom: 615px;
+  }
+  .who-we-are-inner {
+    padding-bottom: 0 0;
+  }
+  .accomodation-box {
+    width: 23%;
+  }
+}
